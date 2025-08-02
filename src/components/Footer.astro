@@ -1,0 +1,32 @@
+---
+---
+
+<footer>
+  <p class="footer-text">
+    &copy; <span id="current-year">2025</span> Recolecta Agua, Recolecta Vida. Todos los derechos reservados.
+  </p>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid var(--gris-oscuro);
+    background-color: var(--gris-oscuro);
+    color: var(--beige-claro);
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .footer {
+      flex-direction: row;
+    }
+  }
+</style>

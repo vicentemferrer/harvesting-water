@@ -1,0 +1,132 @@
+---
+---
+
+<header>
+  <a href="/" class="logo">
+    <i class="fa-solid fa-droplet fa-2xl"></i>
+    <span class="logo-text">Recolecta Agua, Recolecta Vida</span>
+  </a>
+  
+  <nav class="nav-desktop">
+    <a href="/" class="nav-link">Inicio</a>
+    <details>
+      <summary class="nav-link">Aprende</summary>
+      <ul>
+        <li><a href="/aprende/por-que" class="nav-link">¿Por qué recolectar agua?</a>
+        <li><a href="/aprende/como" class="nav-link">¿Cómo funciona?</a></li>
+        <li><a href="/aprende/actua" class="nav-link">Hazlo tú mismo</a></li>
+      </ul>
+    </details>
+    <a href="/recursos" class="nav-link">Recursos</a>
+    <a href="/contacto" class="nav-link">Contacto</a>
+  </nav>
+  <button class="menu-button">Menú</button>
+</header>
+
+<style>
+  header {
+    padding: 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--verde-musgo);
+    color: var(--beige-claro);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--beige-claro);
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .nav-desktop {
+    display: none;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--beige-claro);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+  }
+
+  nav details {
+    position: relative;
+    cursor: pointer;
+
+    & summary {
+      list-style: none;
+    }
+
+    & ul {
+      position: absolute;
+
+      background-color: var(--verde-musgo);
+    }
+
+    & li {
+      list-style: none;
+      width: auto;
+      padding: 1rem;
+
+      & a {
+        display: block;
+        font-weight: 500;
+
+        text-align: center;
+      }
+    }
+  }
+
+  .menu-button {
+    display: block;
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .menu-button:hover {
+    background-color: rgba(255, 242, 204, 0.9);
+  }
+
+  @media (min-width: 768px) {
+    header {
+      padding: 0 1.5rem;
+    }
+
+    .nav-desktop {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    .menu-button {
+      display: none;
+    }
+  }
+</style>
