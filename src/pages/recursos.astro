@@ -4,6 +4,679 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout pageTitle="Recursos">
   <main>
-    <h1>Recursos</h1>
+    <section class="hero-section">
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Todas las herramientas para comenzar
+        </h1>
+        <p class="hero-description">
+          Aquí encontrarás infografías, guías completas y materiales visuales para aprender, compartir y construir
+          tu propio sistema de recolección de agua de lluvia.
+        </p>
+        <div class="hero-cta">
+          <a href="#infografias" class="btn btn-primary">
+            Ver Infografías
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="infografias" class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            1. Infografías destacadas
+          </h2>
+          <p class="section-description">
+            Visualiza de forma rápida y sencilla los conceptos clave de la recolección de agua.
+          </p>
+        </div>
+
+        <div class="grid grid-1 grid-md-2 grid-lg-3 grid-gap-8">
+          <div class="card">
+            <div class="card-header">
+              <img src="https://via.placeholder.com/300x200/e0f2fe/374151?text=Sistema+doméstico+básico"
+                alt="Miniatura de infografía: Sistema doméstico básico"
+                class="card-image">
+              <h3 class="card-title">Sistema doméstico básico para tu techo en Chiloé</h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Visual en 6 pasos: techo → canaleta → filtro de primeras aguas → tanque → uso doméstico →
+                mantenimiento mínimo.
+              </p>
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary">
+                  📥 PDF A4
+                </a>
+                <a href="#" class="btn btn-outline">
+                  📥 JPG Redes
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="https://via.placeholder.com/300x200/e0f2fe/374151?text=Antes+vs+después"
+                alt="Miniatura de infografía: Antes vs. después"
+                class="card-image">
+              <h3 class="card-title">
+                Antes vs. después: de escorrentía a reserva propia
+              </h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Comparativa visual (paisaje sin captura vs. con sistema instalado). Ideal para difusión local.
+              </p>
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary">
+                  📥 PDF
+                </a>
+                <a href="#" class="btn btn-outline">
+                  📥 JPG Redes
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="https://via.placeholder.com/300x200/e0f2fe/374151?text=Mantenimiento+1-2-3"
+                alt="Miniatura de infografía: Mantenimiento 1-2-3 anual"
+                class="card-image">
+              <h3 class="card-title">Mantenimiento 1-2-3 anual</h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Calendario gráfico con íconos: limpiar canaletas, vaciar tanque, revisar llave, filtrar.
+              </p>
+              <div class="btn-group">
+                <a href="#" class="btn btn-secondary">
+                  📥 PDF A5
+                </a>
+                <a href="#" class="btn btn-outline">
+                  📥 JPG Web
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentos-completos" class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            2. Documentos descargables completos
+          </h2>
+          <p class="section-description">
+            Accede a guías técnicas y folletos detallados para profundizar en el tema.
+          </p>
+        </div>
+
+        <div class="grid grid-1 grid-md-2 grid-lg-3 grid-gap-6">
+          <div class="card card-content-full">
+            <div class="icon-large">📄</div>
+            <h3 class="card-title mb-2">
+              CORMA – Manual de cosecha de agua lluvia (Chile)
+            </h3>
+            <p class="card-description mb-4">
+              Guía técnica ilustrada (techo, canaletas, estanque doméstico). Muy útil como referencia visual y
+              mecánica del sistema.
+            </p>
+            <a href="https://www.corma.cl/wp-content/uploads/2015/09/Manual-Cosecha-Agua-Lluvia.pdf"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              📥 Descargar PDF
+            </a>
+          </div>
+
+          <div class="card card-content-full">
+            <div class="icon-large">📄</div>
+            <h3 class="card-title mb-2">
+              Apuntes sobre la recolección de agua de lluvia (MMA, San Fabián 2016)
+            </h3>
+            <p class="card-description mb-4">
+              Folleto de 12 páginas con fundamentos, ventajas y construcción de sistemas de recolección en
+              comunidades rurales del sur.
+            </p>
+            <a href="https://repositorioambiental.mma.gob.cl/bitstream/handle/123456789/100/Apuntes%20sobre%20la%20recolecci%C3%B3n%20de%20agua%20de%20lluvia.pdf?sequence=1&isAllowed=y"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              📥 Descargar PDF
+            </a>
+          </div>
+
+          <div class="card card-content-full">
+            <div class="icon-large">📄</div>
+            <h3 class="card-title mb-2">
+              Captación y almacenamiento de agua de lluvia (FAO, 2013)
+            </h3>
+            <p class="card-description mb-4">
+              Manual internacional que aporta contexto, buenas prácticas y adaptabilidad.
+            </p>
+            <a href="https://www.fao.org/3/i3225s/i3225s.pdf" 
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              📥 Descargar PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enlaces-utiles" class="section section-bg-celeste">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            3. Enlaces útiles
+          </h2>
+          <p class="section-description">
+            Accede directamente a las fuentes originales para más detalles técnicos y contexto.
+          </p>
+        </div>
+
+        <div class="grid grid-1 grid-md-2 grid-lg-3 grid-gap-6">
+          <div class="card card-beige card-content-full">
+            <div class="icon-large">🔗</div>
+            <h3 class="card-title mb-2">CORMA – Sistema de cosecha de agua lluvia</h3>
+            <p class="card-description mb-4">Enlace directo al PDF interactivo.</p>
+            <a href="https://www.corma.cl/wp-content/uploads/2015/09/Manual-Cosecha-Agua-Lluvia.pdf"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              🔗 Ir al enlace
+            </a>
+          </div>
+
+          <div class="card card-beige card-content-full">
+            <div class="icon-large">🔗</div>
+            <h3 class="card-title mb-2">
+              Repositorio Ambiental MMA – Apuntes sobre aguas lluvias
+            </h3>
+            <p class="card-description mb-4">
+              Accede al folleto completo del Ministerio del Medio Ambiente.
+            </p>
+            <a href="https://repositorioambiental.mma.gob.cl/bitstream/handle/123456789/100/Apuntes%20sobre%20la%20recolecci%C3%B3n%20de%20agua%20de%20lluvia.pdf?sequence=1&isAllowed=y"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              🔗 Ir al enlace
+            </a>
+          </div>
+
+          <div class="card card-beige card-content-full">
+            <div class="icon-large">🔗</div>
+            <h3 class="card-title mb-2">FAO – Manual de captación y almacenamiento</h3>
+            <p class="card-description mb-4">
+              Manual internacional de la FAO sobre captación de agua de lluvia.
+            </p>
+            <a href="https://www.fao.org/3/i3225s/i3225s.pdf" 
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              🔗 Ir al enlace
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visuales-compartir" class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            4. Visuales para compartir (social media / talleres)
+          </h2>
+          <p class="section-description">
+            Descarga imágenes y banners listos para usar en tus redes sociales o para imprimir en talleres.
+          </p>
+          <p class="download-note">
+            (Para descargar, haz clic derecho sobre la imagen y selecciona "Guardar imagen como...")
+          </p>
+        </div>
+
+        <div class="grid grid-1 grid-md-2 grid-lg-3 grid-gap-8">
+          <div class="card">
+            <div class="card-content-full">
+              <img src="https://via.placeholder.com/300x300/e0f2fe/374151?text=Cada+gota+cuenta"
+                alt="Imagen para redes sociales: Cada gota cuenta"
+                class="card-image card-image-square">
+              <h3 class="card-title mb-2">"En tu casa chilote, cada gota cuenta"</h3>
+              <p class="card-description">
+                Imagen JPG optimizada para redes sociales.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content-full">
+              <img src="https://via.placeholder.com/300x300/e0f2fe/374151?text=Camiones+aljibe"
+                alt="Imagen para redes sociales: Camiones aljibe"
+                class="card-image card-image-square">
+              <h3 class="card-title mb-2">
+                "Camiones aljibe: una solución que tú puedes evitar"
+              </h3>
+              <p class="card-description">
+                Imagen JPG optimizada para redes sociales.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content-full">
+              <img src="https://via.placeholder.com/250x400/e0f2fe/374151?text=Banner+A3"
+                alt="Banner A3 vertical para afiches comunitarios"
+                class="card-image card-image-banner">
+              <h3 class="card-title mb-2">Banner A3 vertical para afiches comunitarios</h3>
+              <p class="card-description">
+                Diseño con mapa de precipitaciones de Chiloé y los 6 pasos esenciales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-celeste">
+      <div class="container final-cta">
+        <h2 class="section-title">
+          ¡Descarga nuestra guía rápida!
+        </h2>
+        <p class="final-description">
+          Obtén un resumen práctico y listo para imprimir con los pasos esenciales para tu sistema.
+        </p>
+        <a href="https://www.corma.cl/wp-content/uploads/2015/09/Manual-Cosecha-Agua-Lluvia.pdf"
+          target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+          📥 Descargar guía A4 en PDF
+        </a>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+  }
+
+  .hero-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--celeste-suave);
+    color: var(--gris-oscuro);
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      padding: 6rem 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-section {
+      padding: 8rem 0;
+    }
+  }
+
+  .hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .hero-content > * + * {
+    margin-top: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 3.75rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }
+
+  .hero-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    background-color: rgba(224, 242, 254, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .hero-description {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-description {
+      font-size: 1.5rem;
+    }
+  }
+
+  .hero-cta {
+    padding-top: 1rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background-color: var(--verde-musgo);
+    color: var(--beige-claro);
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(101, 163, 13, 0.9);
+  }
+
+  .btn-secondary {
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(254, 243, 199, 0.9);
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--gris-oscuro);
+    color: var(--gris-oscuro);
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(55, 65, 81, 0.1);
+  }
+
+  .btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .section {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding: 6rem 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding: 8rem 0;
+    }
+  }
+
+  .section-bg-beige {
+    background-color: var(--beige-claro);
+  }
+
+  .section-bg-celeste {
+    background-color: var(--celeste-suave);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-header > * + * {
+    margin-top: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    color: var(--verde-musgo);
+  }
+
+  @media (min-width: 640px) {
+    .section-title {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 3rem;
+    }
+  }
+
+  .section-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-description {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    .grid-md-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-lg-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .grid-gap-6 {
+    gap: 1.5rem;
+  }
+
+  .grid-gap-8 {
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: var(--celeste-suave);
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-beige {
+    background-color: var(--beige-claro);
+  }
+
+  .card-header {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-content {
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content-full {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-description {
+    color: rgba(55, 65, 81, 0.8);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .card-image {
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .card-image-square {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card-image-banner {
+    width: 250px;
+    height: 400px;
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .icon-large {
+    width: 3rem;
+    height: 3rem;
+    color: var(--verde-musgo);
+    margin-bottom: 1rem;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .final-cta {
+    text-align: center;
+  }
+
+  .final-cta > * + * {
+    margin-top: 1.5rem;
+  }
+
+  .final-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.625;
+  }
+
+  @media (min-width: 768px) {
+    .final-description {
+      font-size: 1.25rem;
+    }
+  }
+
+  .download-note {
+    font-size: 0.875rem;
+    color: rgba(55, 65, 81, 0.8);
+    font-style: italic;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .btn-group {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+</style>
