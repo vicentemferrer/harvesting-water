@@ -4,6 +4,596 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout pageTitle="Actúa">
   <main>
-    <h1>Actua</h1>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          ¡Hazlo tú mismo y no dependas del camión aljibe!
+        </h1>
+        <p class="hero-description">
+          Porque no necesitas grandes conocimientos ni herramientas sofisticadas para tener un sistema que funcione
+          todo el invierno y te acompañe en verano. Aquí te mostramos cómo hacerlo con materiales simples y
+          disponibles en el campo chilote, paso a paso, para lograr autonomía hídrica en tu hogar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-beige">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">
+            💡 ¿Por qué construirlo tú mismo?
+          </h2>
+          <p class="section-description">
+            La recolección de agua de lluvia es una solución práctica y accesible. Con esta guía, verás que es posible
+            implementar un sistema eficiente con recursos que ya tienes o que son fáciles de conseguir, adaptándose a
+            las necesidades de tu hogar y al entorno rural chileno.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="materiales-sugeridos" class="section section-celeste">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">
+            🧱 Materiales mínimos sugeridos
+          </h2>
+          <p class="section-description">
+            Para un sistema doméstico de 1.000–2.000 litros, te recomendamos comenzar con:
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="table">
+            <thead class="table-header">
+              <tr>
+                <th>Elemento</th>
+                <th>Descripción</th>
+                <th>Alternativas</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td class="table-cell-icon">
+                  🏠 Techo existente
+                </td>
+                <td>Zinc o teja con inclinación ≥15 %</td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🔧 Canaleta
+                </td>
+                <td>3 a 6 metros de PVC o zinc + soportes</td>
+                <td>Reutilizar canaletas viejas o láminas dobladas</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  💧 Bajante
+                </td>
+                <td>Tubería PVC o manguera gruesa</td>
+                <td>Tubo reciclado o canal de madera entubada</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🔽 Desviador de primeras aguas
+                </td>
+                <td>Tubería vertical con válvula simple y flotador (ej: pelota de ping-pong)</td>
+                <td>Corte manual con llave de paso</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🏢 Tanque o estanque
+                </td>
+                <td>Plástico con tapa (1.000 L ideal)</td>
+                <td>Bidones IBC, tambores plásticos o estanques de 200 L conectados</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🚿 Salida de uso
+                </td>
+                <td>Llave de paso o conector de manguera en la base</td>
+                <td>Grifo o válvula de jardín</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🔍 Filtro básico
+                </td>
+                <td>Malla + carbón activado (si será para limpieza delicada o consumo con tratamiento)</td>
+                <td>Botella PET con piedras, arena, carbón</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="paso-a-paso" class="section section-beige">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">
+            🪛 Paso a paso: montaje general del sistema
+          </h2>
+          <p class="section-description">
+            Sigue estos sencillos pasos para instalar tu sistema de recolección de agua de lluvia:
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="table table-celeste">
+            <thead class="table-header">
+              <tr>
+                <th>Paso</th>
+                <th>Acción</th>
+                <th>Detalles</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td><strong>1️⃣</strong></td>
+                <td>Revisa y limpia tu techo</td>
+                <td>Que esté libre de excrementos, óxido suelto o hojas.</td>
+              </tr>
+              <tr>
+                <td><strong>2️⃣</strong></td>
+                <td>Instala la canaleta</td>
+                <td>Asegura inclinación hacia un punto de bajada. Fíjala con alambres o ganchos.</td>
+              </tr>
+              <tr>
+                <td><strong>3️⃣</strong></td>
+                <td>Conecta el bajante al desviador (opcional)</td>
+                <td>Si puedes, instala un tubo vertical con una válvula o filtro de primeras aguas.</td>
+              </tr>
+              <tr>
+                <td><strong>4️⃣</strong></td>
+                <td>Ubica tu estanque cerrado</td>
+                <td>Debe estar cerca de la bajada, a la sombra si es posible, sobre base nivelada.</td>
+              </tr>
+              <tr>
+                <td><strong>5️⃣</strong></td>
+                <td>Conecta el bajante al estanque</td>
+                <td>Usa adaptadores o perfora el bidón con cuidado.</td>
+              </tr>
+              <tr>
+                <td><strong>6️⃣</strong></td>
+                <td>Instala una salida con grifo</td>
+                <td>Si es para riego o baño, puedes conectar una manguera.</td>
+              </tr>
+              <tr>
+                <td><strong>7️⃣</strong></td>
+                <td>(Opcional) Añade filtro casero</td>
+                <td>Si el uso será sensible (ducha, lavado), añade malla y carbón activado.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="mantenimiento-minimo" class="section section-celeste">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">
+            🧽 Mantenimiento mínimo
+          </h2>
+        </div>
+        
+        <div class="table-container">
+          <table class="table">
+            <thead class="table-header">
+              <tr>
+                <th>Elemento</th>
+                <th>Tarea</th>
+                <th>Frecuencia</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td class="table-cell-icon">
+                  🏠 Canaleta y techo
+                </td>
+                <td>Limpiar hojas, barro y residuos</td>
+                <td>Cada 3–6 meses</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🏢 Estanque
+                </td>
+                <td>Revisar tapa, lavar sedimentos</td>
+                <td>1 vez al año</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🚿 Salida
+                </td>
+                <td>Verificar que la llave funcione bien</td>
+                <td>Al inicio de temporada de uso</td>
+              </tr>
+              <tr>
+                <td class="table-cell-icon">
+                  🔽 Desviador de primeras aguas
+                </td>
+                <td>Asegurar que se vacíe después de cada lluvia</td>
+                <td>Siempre que llueva</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos-complementarios" class="section section-beige">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">
+            🔗 Recursos complementarios
+          </h2>
+          <p class="section-description">
+            Estas guías fueron creadas por instituciones chilenas y contienen detalles adicionales, esquemas e ideas
+            que puedes adaptar a tu realidad:
+          </p>
+        </div>
+        
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">📄</div>
+            <h3 class="card-title">
+              Manual CORMA – Sistema de cosecha de agua lluvia (PDF)
+            </h3>
+            <p class="card-content">
+              Guía ilustrada paso a paso para techos, canaletas y estanques domésticos.
+            </p>
+            <a 
+              href="https://www.corma.cl/wp-content/uploads/2020/03/sistema-de-cosecha-de-agua-lluvia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              <span class="button-icon">⬇️</span> Descargar PDF
+            </a>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">📄</div>
+            <h3 class="card-title">
+              Apuntes sobre aguas lluvias – Ministerio del Medio Ambiente
+            </h3>
+            <p class="card-content">
+              Material reflexivo y práctico creado en San Fabián para uso rural comunitario.
+            </p>
+            <a 
+              href="https://repositorioambiental.mma.gob.cl/wp-content/uploads/2019/09/Apuntes-aguas-lluvias-1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              <span class="button-icon">⬇️</span> Descargar PDF
+            </a>
+          </div>
+        </div>
+        
+        <p class="small-note">Estos enlaces abrirán en una nueva pestaña.</p>
+      </div>
+    </section>
+
+    <section class="section section-celeste">
+      <div class="container">
+        <div class="final-cta">
+          <h2 class="final-cta-title">
+            ¡Empieza tu proyecto hoy!
+          </h2>
+          <p class="final-cta-description">
+            Con esta guía, tienes todo lo necesario para dar el primer paso hacia la autosuficiencia hídrica.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-verde button-large"
+          >
+            <span class="button-icon-large">⬇️</span> Descarga esta guía en PDF
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--celeste-suave);
+    color: var(--gris-oscuro);
+    text-align: center;
+  }
+
+  .hero-content {
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .hero-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    background-color: rgba(224, 242, 254, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .section {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .section-beige {
+    background-color: var(--beige-claro);
+  }
+
+  .section-celeste {
+    background-color: var(--celeste-suave);
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--verde-musgo);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .section-content {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .section-description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--gris-oscuro);
+    background-color: var(--beige-claro);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .table-celeste {
+    background-color: var(--celeste-suave);
+  }
+
+  .table-header {
+    background-color: var(--verde-musgo);
+    color: var(--beige-claro);
+  }
+
+  .table-header th {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .table-body td {
+    padding: 1rem;
+    border-top: 1px solid #d1d5db;
+    color: var(--gris-oscuro);
+  }
+
+  .table-body tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .table-cell-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    background-color: var(--celeste-suave);
+    border: 1px solid var(--gris-oscuro);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .card-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--verde-musgo);
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-content {
+    color: rgba(55, 65, 81, 0.8);
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button-primary {
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+  }
+
+  .button-primary:hover {
+    background-color: rgba(254, 243, 199, 0.9);
+  }
+
+  .button-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .button-verde {
+    background-color: var(--verde-musgo);
+    color: var(--beige-claro);
+  }
+
+  .button-verde:hover {
+    background-color: rgba(74, 93, 35, 0.9);
+  }
+
+  .button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  .button-icon-large {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+  }
+
+  .final-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .final-cta-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--verde-musgo);
+  }
+
+  .final-cta-description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .small-note {
+    font-size: 0.875rem;
+    color: rgba(55, 65, 81, 0.8);
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 6rem 0;
+    }
+
+    .hero-section {
+      padding: 6rem 0;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+    }
+
+    .hero-description {
+      font-size: 1.25rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .section-description {
+      font-size: 1.25rem;
+    }
+
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding: 8rem 0;
+    }
+
+    .hero-section {
+      padding: 8rem 0;
+    }
+
+    .hero-title {
+      font-size: 4rem;
+    }
+
+    .section-title {
+      font-size: 3rem;
+    }
+
+    .final-cta-title {
+      font-size: 3rem;
+    }
+  }
+</style>

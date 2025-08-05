@@ -4,6 +4,539 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout pageTitle="Actúa">
   <main>
-    <h1>Como</h1>
-  </main>
+		<section class="section section-large bg-celeste-suave text-gris-oscuro hero">
+			<div class="container hero-content">
+				<h1 class="hero-title">
+					¿Cómo funciona la recolección de agua de lluvia?
+				</h1>
+				<p class="hero-description">
+					"Tu techo, tu reserva de agua"
+					<br>
+					En tu hogar chilote, donde caen miles de milímetros de lluvia al año, el agua no escasea en el cielo, sino
+					en el tanque. Este sistema básico te permite aprovechar lo que ya tienes para recolectar agua antes de que
+					fluya cuesta abajo. Es simple, útil y está pensado para zonas rurales elevadas, como las cumbres y lomajes
+					del sur de la Isla de Chiloé.
+				</p>
+			</div>
+		</section>
+
+		<section id="componentes-clave" class="section section-large bg-beige-claro text-gris-oscuro">
+			<div class="container">
+				<div class="section-title text-verde-musgo">
+					💧 Sistema mínimo indispensable: los 5 componentes clave
+				</div>
+				<p class="section-subtitle">
+					Un sistema de recolección de agua de lluvia es más simple de lo que imaginas. Aquí te mostramos sus
+					partes esenciales:
+				</p>
+
+				<div class="grid grid-2 items-center">
+					<div class="image-center">
+						<img src="/placeholder.svg?height=500&width=700" 
+							width="700" 
+							height="500" 
+							alt="Diagrama de flujo del sistema de recolección de agua" 
+							class="image">
+					</div>
+
+					<table class="table bg-celeste-suave">
+						<thead class="table-header">
+							<tr>
+								<th>Paso</th>
+								<th>Elemento</th>
+								<th>¿Qué hace?</th>
+							</tr>
+						</thead>
+						<tbody class="table-body">
+							<tr>
+								<td class="font-medium">1️⃣</td>
+								<td>Techo limpio y con pendiente</td>
+								<td>
+									Captura el agua desde el cielo. Techos metálicos o de teja funcionan perfecto.
+								</td>
+							</tr>
+							<tr>
+								<td class="font-medium">2️⃣</td>
+								<td>Canaleta y bajante</td>
+								<td>Conduce el agua hacia el estanque. Con pendiente y sin obstrucciones.</td>
+							</tr>
+							<tr>
+								<td class="font-medium">3️⃣</td>
+								<td>Desviador de primeras aguas (opcional pero recomendado)</td>
+								<td>
+									Evita que el agua más sucia (primeros 10–20 mm) entre al estanque. Se puede hacer con un tubo, una
+									llave y una pelota.
+								</td>
+							</tr>
+							<tr>
+								<td class="font-medium">4️⃣</td>
+								<td>Estanque cerrado (1.000–2.000 L)</td>
+								<td>
+									Almacena el agua. Lo ideal es que sea opaco, con tapa, elevado sobre el suelo y lejos del sol
+									directo.
+								</td>
+							</tr>
+							<tr>
+								<td class="font-medium">5️⃣</td>
+								<td>Salida por llave o manguera</td>
+								<td>
+									Permite usar el agua en baño, riego, limpieza. Si será para beber, se necesita un filtro
+									adicional.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="por-que-chiloe" class="section section-large bg-celeste-suave text-gris-oscuro">
+			<div class="container grid grid-2 items-center">
+				<div>
+					<h2 class="section-title text-verde-musgo" style="text-align: left; margin-bottom: 1rem;">
+						📍 ¿Por qué funciona en Chiloé rural?
+					</h2>
+					<ul class="check-list">
+						<li>
+							<span class="check-icon">✓</span>
+							<span>
+								<strong>Llueve mucho:</strong> En zonas altas de la isla caen entre 2.500 y 4.000 mm al año.
+							</span>
+						</li>
+						<li>
+							<span class="check-icon">✓</span>
+							<span>
+								<strong>Terreno inclinado:</strong> El agua baja rápido y se pierde si no la recoges.
+							</span>
+						</li>
+						<li>
+							<span class="check-icon">✓</span>
+							<span>
+								<strong>Infraestructura escasa:</strong> Muchas familias no tienen APR y dependen de camiones
+								aljibe.
+							</span>
+						</li>
+						<li>
+							<span class="check-icon">✓</span>
+							<span>
+								<strong>Autosuficiencia real:</strong> Este sistema puede almacenar agua para semanas, sin
+								electricidad, sin red, sin complicaciones.
+							</span>
+						</li>
+					</ul>
+					<p style="font-size: 1.25rem; font-weight: 600; margin-top: 1rem;">
+						Ejemplo: con 60 m² de techo y 2.500 mm de lluvia, puedes captar hasta 120.000 litros al año.
+					</p>
+				</div>
+				<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+					<img src="/placeholder.svg?height=400&width=600" 
+						width="600" 
+						height="400" 
+						alt="Mapa de lluvia de Chiloé" 
+						class="image">
+					<img src="/placeholder.svg?height=300&width=500" 
+						width="500" 
+						height="300" 
+						alt="Vista en corte de cerro con agua fluyendo cuesta abajo" 
+						class="image">
+				</div>
+			</div>
+		</section>
+
+		<section id="mantenimiento" class="section section-large bg-beige-claro text-gris-oscuro">
+			<div class="container" style="text-align: center; max-width: 800px;">
+				<h2 class="section-title text-verde-musgo">
+					🧼 Mantenimiento mínimo
+				</h2>
+				<table class="table bg-celeste-suave">
+					<thead class="table-header">
+						<tr>
+							<th>Elemento</th>
+							<th>Tarea</th>
+							<th>Frecuencia</th>
+						</tr>
+					</thead>
+					<tbody class="table-body">
+						<tr>
+							<td class="font-medium">🏠 Canaleta y techo</td>
+							<td>Limpiar hojas, barro y residuos</td>
+							<td>Cada 3–6 meses</td>
+						</tr>
+						<tr>
+							<td class="font-medium">🏪 Estanque</td>
+							<td>Revisar tapa, lavar sedimentos</td>
+							<td>1 vez al año</td>
+						</tr>
+						<tr>
+							<td class="font-medium">🚰 Salida</td>
+							<td>Verificar que la llave funcione bien</td>
+							<td>Al inicio de temporada de uso</td>
+						</tr>
+						<tr>
+							<td class="font-medium">🗓️ Desviador de primeras aguas</td>
+							<td>Asegurar que se vacíe después de cada lluvia</td>
+							<td>Siempre que llueva</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section id="materiales" class="section section-large bg-celeste-suave text-gris-oscuro">
+			<div class="container" style="text-align: center; max-width: 900px;">
+				<h2 class="section-title text-verde-musgo">
+					📦 Materiales posibles
+				</h2>
+				<div class="grid grid-3">
+					<div class="card">
+						<div class="card-icon">♻️</div>
+						<div class="card-title">Bidones reutilizados</div>
+						<div class="card-content">
+							Bidones de 1.000–2.000 L (IBC) o tambores plásticos.
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-icon">🔧</div>
+						<div class="card-title">Canaletas y tubos</div>
+						<div class="card-content">
+							Canaletas metálicas o PVC, tubos de bajada.
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-icon">🔨</div>
+						<div class="card-title">Accesorios</div>
+						<div class="card-content">Grifos, tapaderas, mallas finas.</div>
+					</div>
+					<div class="card">
+						<div class="card-icon">🔍</div>
+						<div class="card-title">Filtro (opcional)</div>
+						<div class="card-content">
+							Malla fina y carbón activado para mejorar la calidad.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="llamada-accion" class="section section-large bg-beige-claro text-gris-oscuro">
+			<div class="container cta">
+				<h2 class="section-title text-verde-musgo">
+					📣 ¡Pasa a la acción!
+				</h2>
+				<p class="cta-text">
+					Ya sabes cómo funciona un sistema básico de recolección de agua de lluvia. Ahora es el momento de dar el
+					siguiente paso y construir el tuyo.
+				</p>
+				<a href="/aprende/actua" class="button">
+					🔗 Ir a Hazlo tú mismo →
+				</a>
+			</div>
+		</section>
+	</main>
 </Layout>
+
+<style>
+  .bg-beige-claro {
+		background-color: var(--beige-claro);
+  }
+
+  .text-gris-oscuro {
+		color: var(--gris-oscuro);
+  }
+
+  .bg-celeste-suave {
+		background-color: var(--celeste-suave);
+  }
+
+  .bg-verde-musgo {
+		background-color: var(--verde-musgo);
+  }
+
+  .text-beige-claro {
+		color: var(--beige-claro);
+  }
+
+  .text-verde-musgo {
+		color: var(--verde-musgo);
+  }
+
+  .bg-amarillo-suave {
+		background-color: var(--amarillo-suave);
+  }
+  
+  .section {
+		padding: 3rem 0;
+  }
+
+  .section-large {
+		padding: 6rem 0;
+  }
+
+  .container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+  }
+
+  .hero-content {
+		text-align: center;
+  }
+
+  .hero-content > * + * {
+		margin-top: 1.5rem;
+  }
+
+  .hero-title {
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 1.1;
+		text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .hero-description {
+		max-width: 900px;
+		margin: 0 auto;
+		font-size: 1.125rem;
+		background-color: rgba(224, 242, 254, 0.8);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .grid {
+		display: grid;
+		gap: 2rem;
+  }
+
+  .grid-2 {
+		grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+		grid-template-columns: 1fr;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .section-title {
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+		max-width: 900px;
+		margin: 0 auto;
+		font-size: 1.125rem;
+		text-align: center;
+		margin-bottom: 3rem;
+  }
+
+  .table {
+		width: 100%;
+		border-collapse: collapse;
+		border: 2px solid var(--gris-oscuro);
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .table-header {
+		background-color: var(--verde-musgo);
+  }
+
+  .table-header th {
+		color: var(--beige-claro);
+		font-size: 1.125rem;
+		font-weight: 600;
+		padding: 1rem;
+		text-align: left;
+  }
+
+  .table-body {
+		background-color: var(--celeste-suave);
+  }
+
+  .table-body td {
+		padding: 1rem;
+		border-bottom: 1px solid var(--gris-oscuro);
+  }
+
+  .table-body .font-medium {
+		font-weight: 500;
+  }
+
+  .check-list {
+		list-style: none;
+  }
+
+  .check-list li {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
+		margin-bottom: 0.75rem;
+		font-size: 1.125rem;
+		line-height: 1.6;
+  }
+
+  .check-icon {
+		width: 1.5rem;
+		height: 1.5rem;
+		color: var(--verde-musgo);
+		flex-shrink: 0;
+		margin-top: 0.25rem;
+  }
+
+  .image {
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		max-width: 100%;
+		height: auto;
+  }
+
+  .image-center {
+		display: flex;
+		justify-content: center;
+  }
+
+  .card {
+		background-color: var(--beige-claro);
+		border: 2px solid var(--gris-oscuro);
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		border-radius: 0.5rem;
+  }
+
+  .card-icon {
+		width: 3rem;
+		height: 3rem;
+		color: var(--verde-musgo);
+		margin-bottom: 1rem;
+  }
+
+  .card-title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+  }
+
+  .card-content {
+		color: rgba(55, 65, 81, 0.8);
+  }
+
+  .button {
+		background-color: var(--amarillo-suave);
+		color: var(--gris-oscuro);
+		padding: 1rem 2.5rem;
+		font-size: 1.25rem;
+		font-weight: 600;
+		border: none;
+		border-radius: 0.5rem;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		text-decoration: none;
+		display: inline-block;
+		transition: background-color 0.2s;
+  }
+
+  .button:hover {
+		background-color: rgba(254, 243, 199, 0.9);
+  }
+
+  .cta {
+		text-align: center;
+  }
+
+  .cta > * + * {
+		margin-top: 1.5rem;
+  }
+
+  .cta-text {
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 1.125rem;
+		line-height: 1.6;
+  }
+
+  @media (min-width: 640px) {
+		.hero-title {
+			font-size: 3rem;
+		}
+		
+		.hero-description {
+			font-size: 1.25rem;
+		}
+
+		.grid-3 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+  }
+
+  @media (min-width: 768px) {
+		.section {
+			padding: 6rem 0;
+		}
+
+		.section-large {
+			padding: 8rem 0;
+		}
+
+		.container {
+			padding: 0 1.5rem;
+		}
+
+		.hero-title {
+			font-size: 3.75rem;
+		}
+
+		.hero-description {
+			font-size: 1.25rem;
+		}
+
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.25rem;
+		}
+  }
+
+  @media (min-width: 1024px) {
+		.section-large {
+			padding: 8rem 0;
+		}
+
+		.hero-title {
+			font-size: 4.5rem;
+		}
+
+		.hero-description {
+				font-size: 1.5rem;
+		}
+
+		.section-title {
+			font-size: 3rem;
+		}
+
+		.grid-2 {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 3rem;
+		}
+
+		.grid-3 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+  }
+
+  .icon {
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		fill: currentColor;
+  }
+</style>
