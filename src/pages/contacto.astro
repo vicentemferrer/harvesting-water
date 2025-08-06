@@ -4,6 +4,487 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout pageTitle="Contáctanos">
   <main>
-    <h1>Contactanos</h1>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Conversemos. Todo comienza con una gota.
+        </h1>
+        <p class="hero-description">
+          ¿Tienes preguntas? ¿Ya instalaste tu sistema? ¿Te gustaría que hiciéramos una versión impresa para tu
+          comunidad? Estás en el lugar correcto. Completa el formulario y te responderemos lo antes posible.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Envíanos un mensaje</h2>
+            <p class="card-description">
+              Completa los campos a continuación para contactarnos.
+            </p>
+          </div>
+          <div class="card-content">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Nombre completo <span class="required">*</span>
+                </label>
+                <input type="text" id="fullName" class="form-input" placeholder="Tu nombre completo" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                  </svg>
+                  Correo electrónico <span class="required">*</span>
+                </label>
+                <input type="email" id="email" class="form-input" placeholder="tu.correo@ejemplo.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="location" class="form-label">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Comuna y región (Opcional)
+                </label>
+                <input type="text" id="location" class="form-input" placeholder="Ej: Ancud, Los Lagos">
+              </div>
+              
+              <div class="form-group">
+                <label for="topic" class="form-label">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  Tema o motivo <span class="required">*</span>
+                </label>
+                <select id="topic" class="form-select" required>
+                  <option value="">Selecciona un tema</option>
+                  <option value="consulta-tecnica">Consulta técnica</option>
+                  <option value="compartir-experiencia">Compartir experiencia</option>
+                  <option value="solicitar-recursos">Solicitar recursos</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Tu mensaje</label>
+                <textarea id="message" class="form-textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="m22 2-7 20-4-9-9-4 20-7z"></path>
+                </svg>
+                Enviar mensaje
+              </button>
+            </form>
+            
+            <p class="privacy-note">
+              <span class="privacy-icon">🛡️</span> <strong>Nota:</strong> Tu información será usada solo para responder tu
+              mensaje. No será compartida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="container">
+        <div class="card story-card">
+          <div class="card-header">
+            <h2 class="card-title">📢 ¿Quieres compartir tu historia?</h2>
+            <p class="card-description">
+              Si ya recolectas agua de lluvia en tu casa o comunidad, ¡cuéntanos cómo lo hiciste!
+            </p>
+          </div>
+          <div class="card-content">
+            <p class="story-intro">Puedes enviar:</p>
+            <ul class="story-list">
+              <li class="story-item">
+                <svg class="icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2v11z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                Fotos de tu sistema instalado.
+              </li>
+              <li class="story-item">
+                <svg class="icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14,2 14,8 20,8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10,9 9,9 8,9"></polyline>
+                </svg>
+                Tu historia en texto.
+              </li>
+              <li class="story-item">
+                <svg class="icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="23"></line>
+                  <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+                Tu historia en audio.
+              </li>
+              <li class="story-item">
+                <svg class="icon green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Datos útiles que quieras compartir con otros vecinos.
+              </li>
+            </ul>
+            <p class="story-highlight">
+              👉 Tu experiencia puede aparecer en la sección "Proyectos en Chile".
+            </p>
+            <button class="story-btn">Enviar mi historia</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email-section">
+      <div class="container-small">
+        <div class="card email-card">
+          <div class="card-header">
+            <h2 class="card-title">📬 Correo directo alternativo</h2>
+            <p class="card-description">
+              Si prefieres, también puedes escribirnos directamente a:
+            </p>
+          </div>
+          <div class="card-content email-content">
+            <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:recolectalluvia@proton.me" class="email-link">
+              recolectalluvia@proton.me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .hero-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--celeste-suave);
+    color: var(--gris-oscuro);
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  .hero-description {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    background-color: rgba(224, 242, 254, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--beige-claro);
+    color: var(--gris-oscuro);
+  }
+
+  .story-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--celeste-suave);
+    color: var(--gris-oscuro);
+  }
+
+  .email-section {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--beige-claro);
+    color: var(--gris-oscuro);
+  }
+
+  .container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container-small {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .card {
+    background-color: var(--celeste-suave);
+    border: 1px solid var(--gris-oscuro);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .story-card {
+    background-color: var(--beige-claro);
+  }
+
+  .email-card {
+    background-color: var(--celeste-suave);
+  }
+
+  .card-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--verde-musgo);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    color: rgba(55, 65, 81, 0.8); 
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .required {
+    color: #ef4444;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: white;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-input:focus,
+  .form-select:focus {
+    outline: none;
+    border-color: var(--verde-musgo);
+    box-shadow: 0 0 0 3px rgba(79, 121, 66, 0.1);
+  }
+
+  .form-textarea {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: white;
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-textarea:focus {
+    outline: none;
+    border-color: var(--verde-musgo);
+    box-shadow: 0 0 0 3px rgba(79, 121, 66, 0.1);
+  }
+
+  .submit-btn,
+  .story-btn {
+    background-color: var(--amarillo-suave);
+    color: var(--gris-oscuro);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.15s ease-in-out;
+  }
+
+  .submit-btn:hover,
+  .story-btn:hover {
+    background-color: rgba(254, 243, 199, 0.9);
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+
+  .icon.green {
+    color: var(--verde-musgo);
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .email-icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--verde-musgo);
+    margin-bottom: 1rem;
+  }
+
+  .privacy-note {
+    font-size: 0.875rem;
+    color: rgba(55, 65, 81, 0.7);
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .privacy-icon {
+    font-weight: 600;
+  }
+
+  .story-intro {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .story-list {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .story-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+
+  .story-highlight {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  .email-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .email-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .email-link:hover {
+    color: var(--amarillo-suave);
+    mix-blend-mode: multiply;
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      padding: 6rem 0;
+    }
+
+    .hero-title {
+      font-size: 3.75rem;
+    }
+
+    .hero-description {
+      font-size: 1.25rem;
+    }
+
+    .contact-form-section,
+    .story-section,
+    .email-section {
+      padding: 6rem 0;
+    }
+
+    .container {
+      padding: 0 1.5rem;
+    }
+
+    .email-link {
+      font-size: 1.875rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-section {
+      padding: 8rem 0;
+    }
+
+    .hero-title {
+      font-size: 4.5rem;
+    }
+
+    .hero-description {
+      font-size: 1.5rem;
+    }
+
+    .contact-form-section,
+    .story-section,
+    .email-section {
+      padding: 8rem 0;
+    }
+
+    .email-link {
+      font-size: 1.875rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }
+</style>
